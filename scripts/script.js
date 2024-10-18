@@ -31,3 +31,20 @@ prevBtn.addEventListener('click', () => {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
 });
+const modal = document.getElementById('admissionModal');
+const openModalBtn = document.getElementById('openModal');
+const closeModalBtn = document.querySelector('.close-btn');
+
+openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
+});
+
+closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
