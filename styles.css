@@ -44,3 +44,13 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: calc(33% - 10px); /* Adjust as necessary */
+    height: auto;
+}
