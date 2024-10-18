@@ -40,33 +40,7 @@
                 <li>Advanced Nursing Practice</li>
             </ul>
         </section>
-
-        <section id="admissions">
-            <h2>Admissions</h2>
-            <p>Learn how to apply for our nursing programs.</p>
-        </section>
-        
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <blockquote>
-                <p>"Studying at St. Camillus has transformed my life!"</p>
-                <cite>- Clinton Masakuu, Alumni</cite>
-            </blockquote>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@stcamillusnursing.ac.ke</p>
-            <p>Phone: +254 700 000 000</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 St. Camillus School of Nursing. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <!-- Button trigger modal -->
+         <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#courseModal">
   More about Courses
 </button>
@@ -90,6 +64,51 @@
     </div>
   </div>
 </div>
+
+        <section id="admissions">
+            <h2>Admissions</h2>
+            <p>Learn how to apply for our nursing programs.</p>
+        </section>
+        
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Studying at St. Camillus has transformed my life!"</p>
+                <cite>- Clinton Masakuu, Alumni</cite>
+            </blockquote>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@stcamillusnursing.ac.ke</p>
+            <p>Phone: +254 700 000 000</p>
+        </section>
+        <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="https://formspree.io/f/your-endpoint" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St. Camillus School of Nursing. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+   
 
 </body>
 </html>
