@@ -139,3 +139,17 @@ footer.footer h2 {
 footer.footer p {
     font-size: 1rem;
 }
+.hero-content {
+    animation: fadeInUp 2s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
