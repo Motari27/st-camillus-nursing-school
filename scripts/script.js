@@ -7,3 +7,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+const slides = document.querySelectorAll('.carousel-slide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentSlide = 0;
+
+function showSlide(slideIndex) {
+    slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === slideIndex) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+});
+
+prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+});
