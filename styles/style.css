@@ -243,3 +243,28 @@ nav {
     font-size: 1.5rem;
     cursor: pointer;
 }
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    display: none;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 2px solid #333;
+}
