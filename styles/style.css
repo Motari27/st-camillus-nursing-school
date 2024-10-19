@@ -153,3 +153,9 @@ header nav {
 .modal {
     display: none;
    [_{{{CITATION{{{_1{](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md)[_{{{CITATION{{{_2{](https://github.com/yysofiyan/PABWEB-C/tree/cf31bd3408938678b425c6993cf0956da7c4a380/A2.1800125%2Fsiswa%2Findex.php)[_{{{CITATION{{{_3{](https://github.com/Lembrun/blog-system/tree/dd2ef55eb1cd9712a02e6514e5ad2c112cc3fdd3/views%2Flayouts%2Flayout.php)
+/* Add styles for the map container */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
