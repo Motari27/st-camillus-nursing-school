@@ -455,3 +455,68 @@ header nav {
     height: auto;
     border-radius: 5px;
 }
+/* Chat Widget */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chat-btn {
+    background: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.chat-btn:hover {
+    background: #005f7a;
+}
+
+.chat-box {
+    display: none;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-input {
+    width: calc(100% - 20px);
+    border: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.send-btn {
+    background: #008cba;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.send-btn:hover {
+    background: #005f7a;
+}
