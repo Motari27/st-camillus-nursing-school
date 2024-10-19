@@ -52,3 +52,18 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+// Google Maps API function
+function initMap() {
+    const stCamillus = { lat: -1.2921, lng: 36.8219 }; // Example coordinates for St. Camillus Medical College
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: stCamillus
+    });
+    const marker = new google.maps.Marker({
+        position: stCamillus,
+        map: map
+    });
+}
+
+// Existing script functionality for carousel, accordion, and modal
+// ...
