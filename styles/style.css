@@ -211,3 +211,47 @@ header nav {
 .testimonial p {
     font-style: italic;
 }
+/* Newsletter Section */
+.newsletter-section {
+    padding: 2rem;
+    background: #f4f4f4;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    margin-bottom: 1rem;
+}
+
+.newsletter-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-section label,
+.newsletter-section input,
+.newsletter-section button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.newsletter-section input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-section button {
+    background: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#message {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
