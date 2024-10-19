@@ -67,3 +67,18 @@ function initMap() {
 
 // Existing script functionality for carousel, accordion, and modal
 // ...
+// Existing script functionality for carousel, accordion, and modal
+// ...
+
+// Newsletter form submission
+const newsletterForm = document.getElementById('newsletterForm');
+const messageDiv = document.getElementById('message');
+
+newsletterForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    
+    // Here, you can add the AJAX call or form submission to your server
+    messageDiv.textContent = `Thank you for subscribing, ${email}!`;
+    newsletterForm.reset();
+});
