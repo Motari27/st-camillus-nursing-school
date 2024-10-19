@@ -82,3 +82,35 @@ newsletterForm.addEventListener('submit', (e) => {
     messageDiv.textContent = `Thank you for subscribing, ${email}!`;
     newsletterForm.reset();
 });
+// Existing script functionality for carousel, accordion, modal, form submission, and events
+// ...
+
+// Chat Widget
+const chatBtn = document.getElementById('chatBtn');
+const chatBox = document.getElementById('chatBox');
+const sendBtn = document.getElementById('sendBtn');
+const chatMessages = document.getElementById('chatMessages');
+const chatInput = document.getElementById('chatInput');
+
+chatBtn.addEventListener('click', () => {
+    chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+});
+
+sendBtn.addEventListener('click', () => {
+    const message = chatInput.value.trim();
+    if (message) {
+        const userMessage = document.createElement('div');
+        userMessage.textContent = `You: ${message}`;
+        chatMessages.appendChild(userMessage);
+        chatInput.value = '';
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Simulate a response from the chat widget
+        setTimeout(() => {
+            const botMessage = document.createElement('div');
+            botMessage.textContent = 'Bot: Thanks for your message! We will get back to you shortly.';
+            chatMessages.appendChild(botMessage);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 1000);
+    }
+});
