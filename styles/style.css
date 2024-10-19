@@ -520,3 +520,34 @@ header nav {
 .send-btn:hover {
     background: #005f7a;
 }
+/* Accessible Focus Styles */
+:focus {
+    outline: 2px solid #005f7a;
+    outline-offset: 4px;
+}
+
+/* Ensuring Sufficient Color Contrast */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header, .footer {
+    background: #333;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+}
+
+.nav-links a:hover, .cta:hover, .send-btn:hover {
+    background: #005f7a;
+    color: white;
+}
+
+/* Accessible Fonts and Layout */
+body, input, button {
+    font-size: 1rem;
+    line-height: 1.5;
+}
