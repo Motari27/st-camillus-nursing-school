@@ -114,3 +114,16 @@ sendBtn.addEventListener('click', () => {
         }, 1000);
     }
 });
+// Existing script functionality for carousel, accordion, modal, form submission, events, and chat
+// ...
+
+// Improving Chat Widget Accessibility
+chatBtn.setAttribute('aria-controls', 'chatBox');
+chatBtn.setAttribute('aria-expanded', 'false');
+chatBtn.setAttribute('aria-haspopup', 'true');
+
+chatBtn.addEventListener('click', () => {
+    const expanded = chatBtn.getAttribute('aria-expanded') === 'true' || false;
+    chatBtn.setAttribute('aria-expanded', !expanded);
+    chatBox.style.display = chatBox.style.display === 'block' ? 'none' : 'block';
+});
