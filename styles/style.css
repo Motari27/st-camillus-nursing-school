@@ -412,3 +412,57 @@ button {
     width: 100%;
     max-width: 500px;
     margin: 0
+footer {
+    background: linear-gradient(135deg, #ff6f61, #ffeb3b); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+footer {
+    background: linear-gradient(135deg, #ff6f61, #ffeb3b);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+}
