@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -143,11 +144,55 @@ header nav {
     display: none;
 }
 
-.footer {
-    background: #00796b; /* Dark cyan green */
+footer {
+    background: linear-gradient(135deg, #ff6f61, #ffeb3b); /* Gradient background */
     color: white;
     text-align: center;
     padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-media a:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .modal {
@@ -351,118 +396,4 @@ header nav {
     padding: 10px;
     cursor: pointer;
     width: 100%;
-    border-top: 1px solid #ddd;
-}
-
-.send-btn:hover {
-    background: #005f7a;
-}
-
-:focus {
-    outline: 2px solid #005f7a;
-    outline-offset: 4px;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.header, .footer {
-    background: #333;
-    color: white;
-}
-
-.nav-links a:hover,
-.cta:hover,
-.send-btn:hover {
-    background: #005f7a;
-    color: white;
-}
-
-body,
-input,
-button {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.contact-section {
-    padding: 2rem;
-    background: #f4f4f4;
-    margin: 1rem 0;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-.contact-section h2 {
-    margin-bottom: 1rem;
-}
-
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contactForm label,
-#contactForm input,
-#contactForm textarea,
-#contactForm button {
-    width: 100%;
-    max-width: 500px;
-    margin: 0
-footer {
-    background: linear-gradient(135deg, #ff6f61, #ffeb3b); /* Gradient background */
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
-footer p {
-    margin: 0;
-    font-weight: bold;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-media a {
-    margin: 0 10px;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.3s ease, background 0.3s ease;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.social-media a img {
-    width: 30px;
-    height: 30px;
-}
-
-.social-media a:hover {
-    transform: scale(1.2); /* Enlarge on hover */
-    background: rgba(255, 255, 255, 0.2);
-}
-
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-footer {
-    background: linear-gradient(135deg, #ff6f61, #ffeb3b);
-    background-size: 200% 200%;
-    animation: gradientShift 10s ease infinite;
-}
+    border-top
